@@ -39,3 +39,6 @@ B2:
 
     (b)   Explain your implemented algorithm and its worst-case time complexity 
         After leaving off B1, then upload it to them of a vector. I then sort the vector using the c++ sort that is O(nlogn). Then using two nested loops, I found the difference of every value and using a binary search to see if that difference is in my sorted vector. The nested loops are O(n^2) and the Search is O(logn) so at the end it is O(n^2nlogn).
+
+
+(C) TODO: For both B1 and B2, the input format has to be exactly like the one that was provided, as state by the instructions, including all spaces and comments. "Sample input & output files will be provided. Please adhere to the file formats specified by the examples (2025Fall_SampleInputOutputCode_TA.zip)."
