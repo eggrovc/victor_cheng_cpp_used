@@ -6,7 +6,7 @@ CXXFLAGS = -std=c++11 -Wall -Wextra -g
 TARGET = submission
 
 # Source files .cpp and .h files
-SRC = cheng_p1.cpp proj1.cpp
+SRC = main.cpp proj1.cpp
 HEADERS = proj1.h
 
 # Object files
@@ -15,8 +15,8 @@ OBJ = $(SRC:.cpp=.o)
 # Default rule
 all: $(TARGET)
 
-FILE ?= sample_1.txt
-FILE2 ?= sample_2.txt
+FILE ?= input.txt
+FILE2 ?= output.txt
 
 # Compile the main executable
 $(TARGET): $(OBJ)
@@ -32,5 +32,5 @@ clean:
 
 # Run the program
 run: $(TARGET)
-	./$(TARGET) $(FILE)  $(FILE2) 
+	./$(TARGET) $(FILE) $(FILE2) 
 
