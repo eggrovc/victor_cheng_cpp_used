@@ -101,13 +101,14 @@ void Proj1::questionb2(ofstream& outFile) {
 
     outFile << "// Part B.2" << endl << endl;
 
-    sort(this->qb2Vect.begin(), this->qb2Vect.end()); // nlogn
+    sort(this->qb2Vect.begin(), this->qb2Vect.end());
 
+    // 
     for (int i = 0; i < (int)this->qb2Vect.size(); i++) {
         for (int j = i + 1;j < (int)this->qb2Vect.size(); j++) {
             int diff = this->qb2Vect[j] - this->qb2Vect[i]; 
             
-            if (binary_search(this->qb2Vect.begin(), this->qb2Vect.end(), diff)) { 
+            if (binary_search(this->qb2Vect.begin(), this->qb2Vect.end(), diff) && diff != this->qb2Vect[j] && diff != this->qb2Vect[i]) { 
                 outFile << this->qb2Vect[j] << "-" << this->qb2Vect[i] << "=" << diff << endl;
             }
 
