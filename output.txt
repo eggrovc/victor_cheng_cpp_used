@@ -2,7 +2,7 @@
 
 AAAAABBBBCCCC
 
-Execution Time: 23 microseconds.
+Execution Time: 498 microseconds.
 
 
 // Part B.2
@@ -16,4 +16,4 @@ Execution Time: 23 microseconds.
 15-8=7
 22-15=7
 
-Execution Time: 681 microseconds.
+Execution Time: 1085 microseconds.
