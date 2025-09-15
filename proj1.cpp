@@ -101,7 +101,7 @@ void Proj1::questionb2(ofstream& outFile) {
 
     outFile << "// Part B.2" << endl << endl;
 
-    sort(this->qb2Vect.begin(), this->qb2Vect.end());
+    // sort(this->qb2Vect.begin(), this->qb2Vect.end());
 
     // 
     for (int i = 0; i < (int)this->qb2Vect.size(); i++) {
